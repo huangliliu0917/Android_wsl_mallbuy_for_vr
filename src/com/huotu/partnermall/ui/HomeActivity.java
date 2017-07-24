@@ -583,7 +583,7 @@ public class HomeActivity extends BaseActivity
         pageWeb.getSettings().setSaveFormData(true);
         pageWeb.getSettings().setAllowFileAccess(true);
         pageWeb.getSettings().setLoadWithOverviewMode(false);
-        pageWeb.getSettings().setSavePassword(true);
+        //pageWeb.getSettings().setSavePassword(true);
         pageWeb.getSettings().setLoadsImagesAutomatically(true);
         pageWeb.getSettings().setDomStorageEnabled(true);
         pageWeb.getSettings().setAppCacheEnabled(true);
