@@ -2,7 +2,7 @@ package com.huotu.mall.wenslimall.wxapi;
 
 import android.content.Intent;
 
-import com.huotu.partnermall.utils.ToastUtils;
+import com.huotu.mall.wenslimall.partnermall.utils.ToastUtils;
 
 import cn.sharesdk.wechat.utils.WXAppExtendObject;
 import cn.sharesdk.wechat.utils.WXMediaMessage;

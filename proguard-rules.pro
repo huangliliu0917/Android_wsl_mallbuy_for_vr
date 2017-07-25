@@ -155,6 +155,9 @@ public static final int *;
 
 
 
+-keep class bitter.jnibridge.* { *; }
+-keep class com.unity3d.* { *; }
+-keep class org.fmod.* { *; }
 
 # Application classes that will be serialized/deserialized over Gson
 

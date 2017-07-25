@@ -3,15 +3,12 @@ package com.huotu.mall.wenslimall.wxapi;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 
-import com.huotu.partnermall.BaseApplication;
-import com.huotu.partnermall.inner.R;
-import com.huotu.partnermall.receiver.MyBroadcastReceiver;
-import com.huotu.partnermall.utils.JSONUtil;
-import com.huotu.partnermall.utils.ToastUtils;
+import com.huotu.mall.wenslimall.R;
+import com.huotu.mall.wenslimall.partnermall.BaseApplication;
+import com.huotu.mall.wenslimall.partnermall.utils.BuyerPayUtil;
+import com.huotu.mall.wenslimall.partnermall.utils.ToastUtils;
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;
@@ -19,7 +16,6 @@ import com.tencent.mm.sdk.modelpay.PayResp;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
-import com.huotu.partnermall.utils.BuyerPayUtil;
 
 /**
  * 微信支付回调类
@@ -38,7 +34,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
     void onCreate ( Bundle savedInstanceState ) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.pay_result );
-        application = ( BaseApplication ) this.getApplication ();
+        application = (BaseApplication) this.getApplication ();
         api = WXAPIFactory.createWXAPI ( this, application.readWxpayAppId ( ) );
         api.handleIntent ( getIntent ( ), this );
     }
