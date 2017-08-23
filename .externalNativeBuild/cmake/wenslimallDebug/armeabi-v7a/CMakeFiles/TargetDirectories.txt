@@ -1,3 +1,0 @@
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallDebug/armeabi-v7a/CMakeFiles/seecool.dir
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallDebug/armeabi-v7a/CMakeFiles/edit_cache.dir
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallDebug/armeabi-v7a/CMakeFiles/rebuild_cache.dir

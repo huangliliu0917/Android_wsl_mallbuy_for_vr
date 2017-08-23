@@ -1,3 +1,0 @@
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallRelease/x86/CMakeFiles/seecool.dir
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallRelease/x86/CMakeFiles/edit_cache.dir
-E:/myjob/huobanmall/src/buyer/source/wensli/.externalNativeBuild/cmake/wenslimallRelease/x86/CMakeFiles/rebuild_cache.dir
