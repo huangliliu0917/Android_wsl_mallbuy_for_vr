@@ -79,7 +79,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
 
-        wenslimall {//万事利商城
+        wenslimall {//万事利好丝绸
             manifest.srcFile 'custom/wenslimall/AndroidManifest.xml'
             java.srcDirs = ['custom/wenslimall/src']
             res.srcDirs = ['custom/wenslimall/res']
@@ -105,8 +105,8 @@ android {
 
         wenslimall {//万事利商城
             applicationId 'com.huotu.mall.wenslimall'
-            versionCode BUYER_VERSIONCODE.toInteger()
-            versionName "${BUYER_VERSIONNAME}"
+            versionCode WENSLIMALL_VERSIONCODE.toInteger()
+            versionName "${WENSLIMALL_VERSIONNAME}"
             buildConfigField 'String', 'INTERFACE_URL', '"http://mallapi.silk08.com/"'
             buildConfigField 'String', 'APP_ID', '"73d29a4c9a6d389a0b7288ec27b4c4c4"'
             buildConfigField 'String', 'APP_SECRET', '"9389e8a5c32eefa3134340640fb4ceaa"'
