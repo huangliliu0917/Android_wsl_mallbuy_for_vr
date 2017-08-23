@@ -588,7 +588,7 @@ public class HomeActivity extends BaseActivity
         pageWeb.getSettings().setSaveFormData(true);
         pageWeb.getSettings().setAllowFileAccess(true);
         pageWeb.getSettings().setLoadWithOverviewMode(false);
-        //pageWeb.getSettings().setSavePassword(true);
+        pageWeb.getSettings().setSavePassword(true);
         pageWeb.getSettings().setLoadsImagesAutomatically(true);
         pageWeb.getSettings().setDomStorageEnabled(true);
         pageWeb.getSettings().setAppCacheEnabled(true);
@@ -1145,7 +1145,10 @@ public class HomeActivity extends BaseActivity
 
     @OnClick(R.id.titleRightText)
     public void onViewClicked() {
-        startActivity(new Intent(this, UnityActivity.class));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+            startActivity(new Intent(this, UnityActivity.class));
+        else
+            ToastUtils.showShortToast("您的系统版本过低，暂时不支持");
     }
 
     static class MyBindWeiXinListener implements Response.Listener<PhoneLoginModel> {
@@ -1432,7 +1435,9 @@ public class HomeActivity extends BaseActivity
         VolleyUtil.getRequestQueue().add(request);
     }
 
+
     private static class MyGetUserInfoListener implements Response.Listener<AuthMallModel> {
+
         WeakReference<HomeActivity> ref;
 
         MyGetUserInfoListener(HomeActivity act) {

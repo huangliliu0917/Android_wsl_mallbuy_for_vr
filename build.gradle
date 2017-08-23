@@ -54,7 +54,7 @@ android {
             storeFile file('wensli/wenslimall.jks')
             storePassword 'wenslimall'
         }
-        /*wenslimall {
+       /* wenslimall {
             keyAlias 'wenslimallunity'
             keyPassword '8520123'
             storeFile file('wensli/wenslimallunity.jks')
@@ -103,7 +103,7 @@ android {
     //打包渠道
     productFlavors {
 
-        wenslimall {//万事利好丝绸
+        wenslimall {//万事利商城
             applicationId 'com.huotu.mall.wenslimall'
             versionCode WENSLIMALL_VERSIONCODE.toInteger()
             versionName "${WENSLIMALL_VERSIONNAME}"
@@ -182,7 +182,6 @@ dependencies {
 
     compile 'zlc.season:rxdownload2:2.0.0-beta4'
     compile 'com.orhanobut:logger:1.10'
-    compile 'com.nineoldandroids:library:2.4.0'
 }
 
 

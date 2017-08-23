@@ -121,7 +121,6 @@ class UnityPresenter extends BasePresenter<UnityView> {
         if (!unzipFileDir.exists()) {
             unzipFileDir.mkdirs();
         }
-
         //开始解压
         ZipEntry entry = null;
         String entryFilePath = null;
@@ -131,7 +130,6 @@ class UnityPresenter extends BasePresenter<UnityView> {
         BufferedOutputStream bos = null;
         ZipFile zip = new ZipFile(zipFile);
         Enumeration<ZipEntry> entries = (Enumeration<ZipEntry>) zip.entries();
-
         //循环对压缩包里的每一个文件进行解压
         while (entries.hasMoreElements()) {
             entry = entries.nextElement();
@@ -186,11 +184,18 @@ class UnityPresenter extends BasePresenter<UnityView> {
                 getMvpView().hiddenView();
             else
                 getMvpView().showModelView();
+
             goOn = false;
         }
         if (goOn) {
             download(mContext, entity.getAr_url(), entity.getId());
             getMvpView().checkFile(entity.getAr_url(), entity.getAr_type(), entity.getGiftData());
+            if (entity.getAr_type().equals(Event.VIDEO)) {
+                info.setType("1");
+            } else if (entity.getAr_type().equals(Event.MODEL)) {
+                info.setType("0");
+            }
+            info.setModelName(entity.getName());
         }
     }
 }

@@ -303,6 +303,7 @@ public class UnityActivity extends BaseActivity implements UnityView {
         unityBack.setVisibility(View.GONE);
         openPhoto.setVisibility(View.GONE);
         takePictures.setVisibility(View.GONE);
+        unityModelBack.setVisibility(View.GONE);
     }
 
     @Override
